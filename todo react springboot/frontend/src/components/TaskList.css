@@ -1,0 +1,40 @@
+/* TaskList component styles */
+
+/* Loading state */
+.task-list-loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.task-list-loading .spinner {
+  margin-bottom: 1rem;
+}
+
+/* Empty state */
+.task-list-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.task-list-empty h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.task-list-empty p {
+  font-size: 0.95rem;
+}
+
+/* Task list container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

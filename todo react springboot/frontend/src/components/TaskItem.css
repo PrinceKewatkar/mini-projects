@@ -1,0 +1,162 @@
+/* TaskItem component styles */
+
+/* Task item container */
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.task-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed task styling */
+.task-item.completed {
+  background: #f3f4f6;
+  opacity: 0.8;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Overdue task styling */
+.task-item.overdue:not(.completed) {
+  border-left: 3px solid #dc3545;
+}
+
+/* Checkbox wrapper */
+.task-checkbox-wrapper {
+  padding-top: 0.25rem;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+/* Task content */
+.task-content {
+  flex: 1;
+  min-width: 0; /* Prevent text overflow */
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.task-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Priority badge */
+.priority-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.priority-badge.priority-high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.priority-badge.priority-medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-badge.priority-low {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Description */
+.task-description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Task meta (due date) */
+.task-meta {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.due-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.due-date.overdue {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* Task actions */
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.task-action-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.task-action-button.delete:hover {
+  filter: sepia(1) hue-rotate(-50deg) saturate(5);
+}
+
+.task-action-button.edit:hover {
+  filter: sepia(1) hue-rotate(10deg) saturate(3);
+}
+
+/* Delete confirmation */
+.delete-confirm {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.task-action-button.confirm-delete {
+  color: #22c55e;
+  opacity: 1;
+}
+
+.task-action-button.cancel-delete {
+  color: #ef4444;
+  opacity: 1;
+}

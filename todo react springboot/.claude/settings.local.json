@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(TOKEN=\"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJpYXQiOjE3NzQ2OTUxNTYsImV4cCI6MTc3NDc4MTU1Nn0.8-J-v2M4FaW3wVeU0LZYjUgdG4FhuXWhV0qwzBPAMJlSZ3Hfu7eh_3sLjSTCkqSf\")",
+      "Bash(curl -s -X POST http://localhost:8080/api/tasks -H \"Content-Type: application/json\" -H \"Authorization: Bearer $TOKEN\" -d '{\"\"title\"\":\"\"New Task from curl\"\",\"\"priority\"\":\"\"HIGH\"\",\"\"dueDate\"\":\"\"2026-04-01\"\"}')",
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"username\"\":\"\"testuser2\"\",\"\"password\"\":\"\"password123\"\"}')"
+    ]
+  }
+}
