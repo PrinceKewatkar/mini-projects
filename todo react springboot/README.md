@@ -31,7 +31,7 @@ A complete fullstack todo application with React frontend and Spring Boot backen
 ## Tech Stack
 
 ### Backend
-- Java 17
+- Java 25
 - Spring Boot 3.2
 - Spring Security with JWT
 - Spring Data JPA
@@ -39,7 +39,7 @@ A complete fullstack todo application with React frontend and Spring Boot backen
 - Validation (Jakarta Bean Validation)
 
 ### Frontend
-- React 18
+- React 19
 - React Router v6
 - Axios (HTTP client)
 - Context API (state management)
@@ -199,7 +199,3 @@ The application handles various edge cases:
   - Empty title → "Title is required"
   - Past due date → "Due date cannot be in the past"
   - Task not found → "Task not found"
-
-## License
-
-This project is for educational purposes.
