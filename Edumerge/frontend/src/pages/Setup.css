@@ -1,0 +1,31 @@
+.setup-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.setup-tab {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.setup-tab:hover {
+  background: #f5f7fa;
+  color: #1a73e8;
+}
+
+.setup-tab.active {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: white;
+}
